@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>fenleon</title>
+<meta name="description" content="Fenn — data engineer, film producer, and builder of calm tools for the Light Phone III.">
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --muted: #6b6b6b;
+    --line: #e3e3e3;
+    --bg: #fdfdfc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #e8e8e6;
+      --muted: #9a9a97;
+      --line: #2a2a2a;
+      --bg: #141413;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.6;
+    padding: 4rem 1.5rem 6rem;
+  }
+  main { max-width: 38rem; margin: 0 auto; }
+  h1 { font-size: 1.5rem; font-weight: 600; letter-spacing: 0.02em; }
+  h2 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+    margin: 3.5rem 0 1rem;
+  }
+  p.lede { margin-top: 1.25rem; font-size: 1.05rem; }
+  p.lede + p.lede { margin-top: 0.75rem; }
+  a { color: inherit; }
+  ul.projects { list-style: none; }
+  ul.projects li {
+    padding: 0.9rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+  ul.projects li:last-child { border-bottom: none; }
+  ul.projects a.name { font-weight: 600; text-decoration: none; }
+  ul.projects a.name:hover { text-decoration: underline; }
+  ul.projects .desc { color: var(--muted); font-size: 0.95rem; }
+  .soon {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: 0.1rem 0.45rem;
+    margin-left: 0.5rem;
+    white-space: nowrap;
+  }
+  .support {
+    margin-top: 3.5rem;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    text-align: center;
+  }
+  .support p { font-size: 0.95rem; }
+  .support a { font-weight: 600; text-decoration: none; border-bottom: 1px solid var(--muted); }
+  .support a:hover { border-bottom-color: var(--ink); }
+  footer {
+    margin-top: 3rem;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  footer a { text-decoration: none; }
+  footer a:hover { color: var(--ink); }
+</style>
+</head>
+<body>
+<main>
+  <h1>fenleon</h1>
+
+  <p class="lede">Data engineer and film producer. In my spare time I build calm, distraction-free software for the <a href="https://www.thelightphone.com">Light Phone III</a> — small tools that feel native to the device and stay out of the way.</p>
+  <p class="lede">Everything below is free and open source.</p>
+
+  <h2>Light Phone tools</h2>
+  <ul class="projects">
+    <li><a class="name" href="https://github.com/fenleon/chats">Chats</a> — <span class="desc">WhatsApp, Signal, Telegram and more, bridged to your Light Phone III.</span></li>
+    <li><a class="name" href="https://github.com/fenleon/audiobooks">Audiobooks</a> — <span class="desc">A minimalist audiobook player for the Light Phone III.</span></li>
+    <li><span class="name">Calls</span><span class="soon">in development</span> — <span class="desc">1:1 WhatsApp voice calling on the Light Phone III.</span></li>
+    <li><a class="name" href="https://github.com/fenleon/passes">Passes</a> — <span class="desc">Store boarding passes, tickets and loyalty codes with QR/barcode display.</span></li>
+    <li><a class="name" href="https://github.com/fenleon/tasks">Tasks</a> — <span class="desc">A calm, local-first to-do list.</span></li>
+    <li><a class="name" href="https://github.com/fenleon/anki">Recall</a> — <span class="desc">Anki-compatible spaced-repetition review tool.</span></li>
+    <li><a class="name" href="https://github.com/fenleon/wifi">WiFi</a> — <span class="desc">Captive-portal sign-in and connect-by-QR.</span></li>
+    <li><a class="name" href="https://github.com/fenleon/location">Location</a> — <span class="desc">One-tap gate for the Light Phone III's location services.</span></li>
+    <li><a class="name" href="https://github.com/fenleon/passkey">Passkey</a> — <span class="desc">A passkey authenticator for the Light Phone III.</span></li>
+    <li><a class="name" href="https://github.com/fenleon/radio-tool">Radio</a> — <span class="desc">Online radio player.</span></li>
+    <li><a class="name" href="https://github.com/fenleon/stopwatch">Stopwatch</a> — <span class="desc">A simple stopwatch.</span></li>
+    <li><a class="name" href="https://github.com/fenleon/light-sdk">light-sdk</a> — <span class="desc">Scaffold and SDK for building custom Light Phone III tools.</span></li>
+  </ul>
+
+  <h2>Other</h2>
+  <ul class="projects">
+    <li><a class="name" href="https://github.com/fenleon/open-madrid">open-madrid</a> — <span class="desc">An open, permissively-licensed implementation of Apple's iMessage protocol, in Kotlin.</span></li>
+    <li><a class="name" href="https://github.com/fenleon/awesome-light">awesome-light</a> — <span class="desc">A list of community apps and tools for the Light Phone.</span></li>
+  </ul>
+
+  <div class="support">
+    <p>Support my work by <a href="https://ko-fi.com/fenleon">leaving me a tip</a> or <a href="https://github.com/sponsors/fenleon">sponsoring me</a>. A little goes a long way.</p>
+  </div>
+
+  <footer>
+    <p><a href="https://github.com/fenleon">github.com/fenleon</a></p>
+  </footer>
+</main>
+</body>
+</html>
